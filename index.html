@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Terawang Khodam Anda</title>
+    <title>Terawang Kodam Anda</title>
 
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="dieng.jpg">
@@ -18,16 +18,16 @@
 
 <body>
     <div class="container">
-        <h2>Cek Khodam Anda</h1>
+        <h2>Cek Kodam Anda</h1>
         <div class="input-container">
             <label for="name">Masukkan Nama Anda:</label>
             <input type="text" id="name" placeholder="Nama Anda" oninput="this.value = this.value.replace(/\b\w/g, char => char.toUpperCase());" required>
             <div id="notification" class="notification">Harap masukkan nama Anda.</div>
-            <button onclick="generateKhodamName()">Terawang Khodam</button>
+            <button onclick="generateKhodamName()">Terawang Kodam</button>
         </div>
         <div id="result" class="result" style="display: none;">
             <p>Hai, <span id="output-name"></span>!</p>
-            <p>Hasil khodam Anda adalah: <span class="khodam-name" id="khodam-name"></span></p>
+            <p>Hasil kodam Anda adalah: <span class="khodam-name" id="khodam-name"></span></p>
             <div id="khodam-description" class="khodam-description"></div>
         </div>
     </div>
